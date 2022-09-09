@@ -15,10 +15,22 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.0",
     "gatsby": "^4.21.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-image": "^2.22.0",
     "gatsby-plugin-manifest": "^4.21.0",
+    "gatsby-plugin-sharp": "^4.22.0",
     "gatsby-plugin-sitemap": "^5.21.0",
+    "gatsby-source-filesystem": "^4.22.0",
+    "gatsby-transformer-sharp": "^4.22.0",
+    "jquery": "^3.6.1",
+    "popper": "^1.0.1",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
-  }
+    "react-dom": "^18.1.0",
+    "reactstrap": "^9.1.4"
+  },
+  "main": "gatsby-config.js",
+  "license": "ISC"
 }
