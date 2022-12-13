@@ -9,6 +9,12 @@ let projectList = [
     link: "#"
   },
   {
+    title: "Raderie",
+    image: "raderie.png",
+    text: "An app to figure out which human values such as creativity, humility, moderation, or sensitivity are more or less valuable to us, then compare that to our friends and loved ones.",
+    link: "https://raderie.me"
+  },
+  {
     title: "Beginners Guide To Cryptography",
     image: "encryptionlogo.webp",
     text: "An intro to crypography for fundamentals for those who don't necessarily have a math or technology background.",
@@ -53,7 +59,7 @@ class Projects extends React.Component {
                       <CardTitle className="card-title text-center h5">{project.title}</CardTitle>
                       <CardImg fluid top src={"images/" + project.image}></CardImg>
                       <CardText className="card-text m-auto merriweather text-center">{project.text}</CardText>
-                      <Button href="#" id={`btn-${index}`} className="btn mt-auto btn-primary">Learn More</Button>
+                      <Button href={project.link} id={`btn-${index}`} className="btn mt-auto btn-primary">Learn More</Button>
                       {project.tooltip ? (
                       <Tooltip placement="bottom" target={`btn-${index}`} isOpen={this.state.tooltipOpen} toggle={this.toggle}>{project.tooltip}</Tooltip>
                       ) : null}
