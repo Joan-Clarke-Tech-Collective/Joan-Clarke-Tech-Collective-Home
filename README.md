@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://clarkecollective.org">
-    <img alt="Joan Clarke headshot" src="[https://www.gatsbyjs.com/Gatsby-Monogram.svg](https://clarkecollective.org/images/Joan-Clarke.jpeg)" width="60" />
+  <a href="https://clarkecollective.org" rel=noreferrer>
+    <img alt="Joan Clarke headshot" src="https://clarkecollective.org/images/Joan-Clarke.jpeg" width="60" />
   </a>
 </p>
 <h1 align="center">
