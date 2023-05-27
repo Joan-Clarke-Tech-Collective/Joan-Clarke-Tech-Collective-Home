@@ -3,14 +3,8 @@ import { Button, Card, CardImg, CardText, CardTitle, Col, Container, Row, Toolti
 
 let projectList = [
   {
-    title: "Trigger.Watch",
-    image: "tw_logo.webp",
-    text: "An AI-enabled guide for viewers to pick out movies without activating content.",
-    link: "#"
-  },
-  {
     title: "Raderie",
-    image: "raderie.png",
+    image: "rad-logo.png",
     text: "An app to figure out which human values such as creativity, humility, moderation, or sensitivity are more or less valuable to us, then compare that to our friends and loved ones.",
     link: "https://raderie.me"
   },
@@ -53,12 +47,12 @@ class Projects extends React.Component {
             <h3 className="text-center secular pt-100">Projects</h3>
             <Row>
               {projectList.map((project, index) => (
-                <Col key={`col-${index}`} className="mx-auto p-3">
-                  <Card className="h-100 mx-auto">
+                <Col key={`col-${index}`} className="mx-auto p-4">
+                  <Card className="h-100 mx-auto col-12">
                     <div className="card-body d-flex flex-column">
                       <CardTitle className="card-title text-center h5">{project.title}</CardTitle>
                       <CardImg fluid top src={"images/" + project.image}></CardImg>
-                      <CardText className="card-text m-auto merriweather text-center">{project.text}</CardText>
+                      <CardText className="card-text m-auto merriweather text-center px-0 pb-2">{project.text}</CardText>
                       <Button href={project.link} id={`btn-${index}`} className="btn mt-auto btn-primary">Learn More</Button>
                       {project.tooltip ? (
                       <Tooltip placement="bottom" target={`btn-${index}`} isOpen={this.state.tooltipOpen} toggle={this.toggle}>{project.tooltip}</Tooltip>

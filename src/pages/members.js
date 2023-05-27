@@ -31,7 +31,7 @@ class Members extends React.Component {
             <h3 className="secular text-center">Our Team</h3>
             <Row>
               {membersList.map(member => (
-                <Col sm={2} className="p-3 mx-auto">
+                <Col sm={2} className="px-0 pb-4 mx-auto">
                   <Card className="h-100">
                     <div className="ribbon red"><span>{member.pronouns}</span></div>
                     <div className="card-body d-flex flex-column">
